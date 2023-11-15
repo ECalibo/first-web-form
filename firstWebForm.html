@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>First Web Form</title>
 </head>
 <body>
-    
+    <h1>My First Web Form</h1>
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+        <fieldset>
+            <legend>Name Information</legend>
+            <input type="text" name="firstName">
+        </fieldset>
+        <input type="submit">
+    </form>
+    <iframe name="cgi-results" id="cgi-results"/>
 </body>
 </html>
